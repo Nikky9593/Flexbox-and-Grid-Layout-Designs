@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    .navbar ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 10px 25px;
+    }
+    .navbar ul li a:hover{
+        background-color: crimson;
+        display: flex;
+    }
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    height: min-content;
+    font-family: 'Lexend Deca', sans-serif; 
+    font-family: 400;
+}
+
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    padding: 5%;
+    font-size: 15px;
+    height: 25rem;
+    
+}
+.sedans h1{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+.sedan-button{
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+    height: 30px;
+    width: 100px;
+    margin-top: 20%;
+    border: none;
+    border-radius: 15px;
+}
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+    padding: 5%;
+    font-size: 15px;
+    height: 25rem;
+    
+}
+.suvs h1{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+.suv-button{
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(184, 100%, 22%);
+    height: 30px;
+    width: 100px;
+    margin-top: 20%;
+    border: none;
+    border-radius: 15px;
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    padding: 5%;
+    font-size: 15px;
+    height: 25rem;
+    
+}
+.luxury h1{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+.luxury-button{
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(179, 100%, 13%);
+    height: 30px;
+    width: 100px;
+    margin-top: 20%;
+    border: none;
+    border-radius: 15px;
+}
+
+
+/** GRID LAYOUT STYLING **/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    place-items: center;
+    height: 100vh;
+}
+main{
+    display: grid;
+    grid-template-areas: 
+    "a a b"
+    "c d d"
+    "c e e"
+    ;
+    gap: 12px;
+    width: 500px;
+    margin: auto;
+}
+main div{
+    padding: 2em;
+    text-align: center;
+}
+.item-A{
+    background-color: rgb(255, 102, 0);
+    grid-area: a;
+}
+.item-B{
+    background-color: rgb(255, 196, 0);
+    grid-area: b;
+}
+.item-C{
+    background-color: rgb(0, 128, 49);
+    grid-area: c;
+}
+.item-D{
+    background-color: rgb(0, 174, 255);
+    grid-area: d;
+}
+.item-E{
+    background-color: rgb(0, 174, 255);
+    grid-area: e;
+}
